@@ -2064,7 +2064,8 @@ function library:CreateWindow(name, size, hidebutton)
                 end)
 
                 --local size = textservice:GetTextSize(slider.Label.Text, slider.Label.TextSize, slider.Label.Font, Vector2.new(200,300))
-                local size = textservice:GetTextSize(slider.Label.Text, slider.Label.TextSize, slider.Label.Font, Vector2.new(0, 0))
+                local size = textservice:GetTextSize(slider.Label.Text, 15, window.theme.font, Vector2.new(200, 300))
+                --textservice:GetTextSize(text, 15, window.theme.font, Vector2.new(2000, 2000))
                 slider.InputLabel = Instance.new("TextBox", slider.MainBack)
                 slider.InputLabel.BackgroundTransparency = 1
                 slider.InputLabel.ClearTextOnFocus = false
