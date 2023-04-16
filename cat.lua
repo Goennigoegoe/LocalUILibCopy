@@ -2063,8 +2063,9 @@ function library:CreateWindow(name, size, hidebutton)
                     slider.Label.TextColor3 = theme.itemscolor
                 end)
 
+                
                 --local size = textservice:GetTextSize(slider.Label.Text, slider.Label.TextSize, slider.Label.Font, Vector2.new(200,300))
-                local size = textservice:GetTextSize(slider.Label.Text, 15, theme.font, Vector2.new(200, 300))
+                local size = textservice:GetTextSize(slider.Label.Text, 15, Enum.Font.Code, Vector2.new(200, 300))
                 --textservice:GetTextSize(text, 15, window.theme.font, Vector2.new(2000, 2000))
                 slider.InputLabel = Instance.new("TextBox", slider.MainBack)
                 slider.InputLabel.BackgroundTransparency = 1
